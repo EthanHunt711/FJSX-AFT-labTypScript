@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+Symbols:wght@300&family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: blue;
+    height: 100px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    margin-top: 100px;
+    gap: 2em;
+}
+
+main section{
+    background-color: bisque;
+    border: 2px solid #000;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main section h3{
+    margin-top: 1em;
+}
