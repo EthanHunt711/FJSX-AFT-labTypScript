@@ -38,9 +38,17 @@ main section{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-main section h3{
+main section h3,
+main section h4{
     margin-top: 1em;
+}
+
+.howToFormulaDescription ol{
+    list-style-type: decimal;
+}
+
+.inside{
+    padding: 1em;
 }
