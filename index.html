@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>ETB bank</title>
     <script src="https://kit.fontawesome.com/902fe4d1cd.js" crossorigin="anonymous"></script>
+    <SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+    <SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
 </head>
 <body>
     <header>
@@ -14,16 +16,34 @@
     </header>
         <main>
             <section class="description">
-                <h3>Beräknings metod</h3>
+                <h3>Beräkningsmetod</h3>
+                <div class="inside howTo">
+                    För att beräkna månadskostnaden för ett bolån används vanligtvis en metod som kallas för annuitetsmetoden. Annuitetslån innebär att låntagaren betalar samma belopp varje månad under hela låneperioden. Denna månadskostnad inkluderar både ränta och amortering (nedbetalning av lånebeloppet).
+                    <h4>Formel för Månadskostnad</h4>
+                    <div class="howToFormula">
+                        $$M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
+                    </div>
+                    <div class="howToFormulaDescription">
+                        <ol>
+                            <!-- <li>$$P$$ är lånebeloppet.</li>
+                            <li>$$r$$ är den månatliga räntesatsen (den årliga räntesatsen dividerad med 12).</li>
+                            <li>$$n$$ är det totala antalet månadsbetalningar (lånetiden i år multiplicerat med 12).</li> -->
+                            <li>coffee</li>
+                        </ol>
+                    </div>
+                </div>
             </section>
             <section class="calculate">
                 <h3>Räknare</h3>
+                <div class="inside calculate"></div>
             </section>
             <section class="wrongInputResult">
                 <h3>Kund meddelande</h3>
+                <div class="inside wrongInput"></div>
             </section>
             <section class="results">
                 <h3>Reultat</h3>
+                <div class="inside result"></div>
             </section>
         </main>
         <aside class="flowVisual">
