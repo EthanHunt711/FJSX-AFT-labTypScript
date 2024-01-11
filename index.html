@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>ETB bank</title>
     <script src="https://kit.fontawesome.com/902fe4d1cd.js" crossorigin="anonymous"></script>
-    <SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
-    <SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+        </script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
 </head>
 <body>
     <header>
@@ -21,21 +29,38 @@
                     För att beräkna månadskostnaden för ett bolån används vanligtvis en metod som kallas för annuitetsmetoden. Annuitetslån innebär att låntagaren betalar samma belopp varje månad under hela låneperioden. Denna månadskostnad inkluderar både ränta och amortering (nedbetalning av lånebeloppet).
                     <h4>Formel för Månadskostnad</h4>
                     <div class="howToFormula">
-                        $$M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
+                        $M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$
                     </div>
                     <div class="howToFormulaDescription">
                         <ol>
-                            <!-- <li>$$P$$ är lånebeloppet.</li>
-                            <li>$$r$$ är den månatliga räntesatsen (den årliga räntesatsen dividerad med 12).</li>
-                            <li>$$n$$ är det totala antalet månadsbetalningar (lånetiden i år multiplicerat med 12).</li> -->
-                            <li>coffee</li>
+                            <li>$P$ är lånebeloppet.</li>
+                            <li>$r$ är den månatliga räntesatsen (den årliga räntesatsen dividerad med 12).</li>
+                            <li>$n$ är det totala antalet månadsbetalningar (lånetiden i år multiplicerat med 12).</li>
                         </ol>
+                    </div>
+                    <h4>Exempel</h4>
+                    <div class="exampleDescription">
+                        <p>Om en person lånar 1 000 000 kr till en årlig räntesats på 3% i 25 år, skulle beräkningen av månadskostnaden se ut så här:</p>
+                        <ol>
+                            <li>Lånebelopp, $P$ = 1 000 000 kr</li>
+                            <li>Månatlig räntesats, $r$ = 3% / 12 = 0,0025</li>
+                            <li>Totalt antal betalningar, $n$ = 25 år * 12 månader/år = 300 månader</li>
+                        </ol>
+                    <p>Månadskostnaden $M$ beräknas sedan enligt formeln.</p>
                     </div>
                 </div>
             </section>
             <section class="calculate">
                 <h3>Räknare</h3>
-                <div class="inside calculate"></div>
+                <div class="inside calculate">
+                    <label for="mortgageSize">Lånebelopp (kr)</label><br>
+                    <input type="number" class="mortgageSize" name="mortgageSize" id="mortgageSize" placeholder="1 000 000 kr"><br>
+                    <label for="mortgageSize">Räntesats (%)</label><br>
+                    <input type="number" class="interestRate" name="interestRate" id="interestRate" placeholder="2.89%"><br>
+                    <label for="mortgageSize">Återbetalningstid (år)</label><br>
+                    <input type="number" class="payBackPlan" name="payBackPlan" id="payBackPlan" placeholder="20 år"><br>
+                    
+                </div>
             </section>
             <section class="wrongInputResult">
                 <h3>Kund meddelande</h3>
@@ -47,7 +72,7 @@
             </section>
         </main>
         <aside class="flowVisual">
-
+         
         </aside>
 
     <script src="./script/main.js"></script>
