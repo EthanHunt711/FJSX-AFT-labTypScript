@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Calculate a mortgage for nonfinancial purposes only learning">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>ETB bank</title>
     <script src="https://kit.fontawesome.com/902fe4d1cd.js" crossorigin="anonymous"></script>
     <script>
@@ -55,12 +55,12 @@
                 <div class="inside calculate">
                     <label for="mortgageSize">Lånebelopp (kr)</label><br>
                     <input type="number" class="mortgageSize" name="mortgageSize" id="mortgageSize" placeholder="1 000 000 kr"><br>
-                    <label for="mortgageSize">Räntesats (%)</label><br>
+                    <label for="interestRate">Räntesats (%)</label><br>
                     <input type="number" class="interestRate" name="interestRate" id="interestRate" placeholder="2.89%"><br>
-                    <label for="mortgageSize">Återbetalningstid (år)</label><br>
+                    <label for="payBackPlan">Återbetalningstid (år)</label><br>
                     <input type="number" class="payBackPlan" name="payBackPlan" id="payBackPlan" placeholder="20 år"><br>
-                    
                 </div>
+                <button class="calculateBtn" id="calculateBtn">Räkna</button>
             </section>
             <section class="wrongInputResult">
                 <h3>Kund meddelande</h3>
@@ -75,6 +75,6 @@
          
         </aside>
 
-    <script src="./script/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
