@@ -39,6 +39,20 @@ main section{
     flex-direction: column;
     align-items: center;
 }
+.description{
+    overflow-y: scroll;
+}
+
+
+.description::-webkit-scrollbar {
+    display: none;
+}
+  
+.description {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+  
 
 main section h3,
 main section h4{
@@ -68,4 +82,31 @@ main section h4{
 
 .wrongInputResult{
     display: none;
+}
+
+.inside.result{
+    padding: 0;
+}
+
+table{
+    table-layout: fixed;
+    font-size: 12px;
+    margin: auto 10px;
+}
+
+
+td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+th, td{
+    padding: .5em;
+    align-items: center;
+}
+
+th{
+    background-color: #fff;
+
 }
