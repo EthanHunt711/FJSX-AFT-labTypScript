@@ -56,6 +56,11 @@ calculateBtn.addEventListener('click', (e) => {
         wrongCard.style.display = 'flex';
         wrongMessage.innerHTML = 'Jag tror inte vi behöver så mycket pengar!';
     }
+    //check if the rate is under the usual
+    else if (interestRate.valueAsNumber > 2) {
+        wrongCard.style.display = 'flex';
+        wrongMessage.innerHTML = 'Jag tror inte vi kan hålla oss till så låg ränta i långa strecken!';
+    }
     //check if the pay back plan is longer than usual
     else if (payBackPlan.valueAsNumber > 35) {
         wrongCard.style.display = 'flex';
